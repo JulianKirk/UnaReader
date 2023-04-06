@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# build artifacts
+bin/**
+.buildozer/**
+!buildozer.spec
