@@ -3,11 +3,9 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
-Window {
+Item {
     width: 1280
     height: 720
-    visible: true
-    title: qsTr("UnaReader")
 
     TabBar {
         id: menuBar
