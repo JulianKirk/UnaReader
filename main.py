@@ -11,7 +11,11 @@ if __name__ == "__main__":
     
     book = epub.read_epub('./test/test.epub')
 
-    debug(book.metadata)
+    for item in book.get_items_of_type(ebooklib.ITEM_DOCUMENT):
+        print(item.get_content())
+
+    # debug(book.get_metadata('DC', 'title'))
+    # debug(book.get_metadata('DC', 'creator'))
     
     app = QApplication()
     view = QQuickView()
